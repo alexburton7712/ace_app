@@ -1,0 +1,8 @@
+<RCC>
+  <!-- Generate after `npm run build`: pyside6-rcc resources.qrc -o resources_rc.py -->
+  <qresource prefix="/ace-ui">
+    <file alias="index.html">../ui/dist/index.html</file>
+    <file alias="assets/main.js">../ui/dist/assets/main.js</file>
+    <file alias="assets/main.css">../ui/dist/assets/main.css</file>
+  </qresource>
+</RCC>

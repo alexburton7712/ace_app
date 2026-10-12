@@ -1,0 +1,104 @@
+# Secrets and machine-local environment configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+.envrc
+.direnv/
+*.local
+*.local.*
+
+# Authentication and package-manager credentials
+.netrc
+.npmrc
+.pypirc
+credentials.json
+credentials.*.json
+client_secret*.json
+service-account*.json
+service_account*.json
+google-services.json
+GoogleService-Info.plist
+
+# Private keys, certificates, and keystores
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+id_ecdsa
+id_ecdsa.*
+id_ed25519
+id_ed25519.*
+
+# Local application data (may contain conversations or user data)
+history.json
+local_notes.txt
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+
+# Cloud and infrastructure state that can contain credentials
+.aws/
+.azure/
+.config/gcloud/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+
+# Python environments, caches, reports, and build output
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+build/
+dist/
+*.egg-info/
+
+# Node/Vite dependencies, caches, reports, and build output
+node_modules/
+.vite/
+coverage/
+ace_app/ui/dist/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime and temporary files
+*.log
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
