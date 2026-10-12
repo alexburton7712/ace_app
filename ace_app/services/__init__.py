@@ -2,7 +2,7 @@
 
 from .ace_client import AceAPIError, AceClient, AudioReply
 from .audio import AudioRecorder, RecordingError
-from .history import HistoryRepository, HistoryStore, SessionHistory
+from .history import SessionHistory
 from .hotkeys import HotkeyError, HotkeyListener
 
 __all__ = [
@@ -10,8 +10,6 @@ __all__ = [
     "AceClient",
     "AudioRecorder",
     "AudioReply",
-    "HistoryRepository",
-    "HistoryStore",
     "SessionHistory",
     "HotkeyError",
     "HotkeyListener",

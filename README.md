@@ -5,9 +5,8 @@ Local Ace and Server Ace. Its native Python host records audio, keeps separate
 session-only conversation transcripts, and accepts session-only HTML widgets;
 its interface is a bundled TypeScript application rendered by Qt WebEngine.
 
-The rewrite lives in `ace_app/`. The root-level Tkinter modules remain only as
-the legacy implementation until the live Qt isolation and packaging gate has
-passed.
+The supported application lives in `ace_app/`. The earlier Tkinter
+implementation has been removed; `python -m ace_app` is the sole entry point.
 
 ## Current implementation
 
@@ -101,7 +100,6 @@ cd ace_app/ui && npm test && npm run build
 The widget-server integration tests bind a temporary loopback port. Environments
 that prohibit socket creation must grant local-loopback access for that suite.
 
-The unit and policy tests do not substitute for the Phase-0 release gate in
-`IMPLEMENTATION_PLAN.md`: the hostile-widget suite must still run in a live
-PySide6 WebEngine and packaged build on the supported Linux baseline before the
-legacy Tkinter files are deleted.
+The unit and policy tests do not substitute for running the hostile-widget
+suite in a live PySide6 WebEngine and packaged build on the supported Linux
+baseline.
